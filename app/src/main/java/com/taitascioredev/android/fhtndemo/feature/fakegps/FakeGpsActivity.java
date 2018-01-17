@@ -153,11 +153,6 @@ public class FakeGpsActivity extends AppCompatActivity implements LocationAssist
     }
 
     @Override
-    public void onMockLocationsDetected(SafeLocation location) {
-
-    }
-
-    @Override
     public void onError(LocationAssistant.ErrorType type, String message) {
 
     }

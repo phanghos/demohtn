@@ -119,18 +119,6 @@ public class LocationAssistant
         void onNewLocationAvailable(SafeLocation location);
 
         /**
-         * Called when the presence of mock locations was detected and {@link #allowMockLocations} is {@code false}.
-         * You can use this callback to scold the user or do whatever. The user can usually disable mock locations by
-         * either switching off a running mock location app (on newer Android systems) or by disabling mock location
-         * apps altogether. The latter can be done in the phone's development settings. You may show an appropriate
-         * message and then use one of the provided OnClickListeners to jump to those settings.
-         *
-         * @param fromView   OnClickListener to use with a view (e.g. a button), jumps to the development settings
-         * @param fromDialog OnClickListener to use with a dialog, jumps to the development settings
-         */
-        void onMockLocationsDetected(SafeLocation safeLocation);
-
-        /**
          * Called when an error has occurred.
          *
          * @param type    the type of error that occurred
